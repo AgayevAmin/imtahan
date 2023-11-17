@@ -1,0 +1,187 @@
+@import"./mixsins";
+body{
+    margin: 0;
+}
+#header{ 
+    
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    @include tablet{
+        
+        justify-content: space-between;
+    }
+    .header{
+
+        width: 100px;
+        height: 50px;
+       &_icon{
+         width: 100%;
+         height: 100%;
+       } 
+
+
+    }
+    .headers{
+       display: flex;
+       @include tablet{
+        display: none;
+       }
+        &_lists{
+            display: flex;
+            &-list{
+                margin-right: 45px;
+           list-style: none;
+          
+            }
+        }
+    }
+    .menu{
+        display: none;
+        @include tablet{
+            display: block;
+            @include mobile{
+                display: block;
+            }
+        }
+
+    }
+}
+.top-10{   
+    background-color: black;
+    color: aliceblue;   
+    &_text{
+        h2{
+            text-align: center;
+        }
+        a{   
+            font-size: 20px;
+             margin-left: 46%;
+            color: aliceblue;
+        }
+    
+    }
+      .top-10-content{
+        display: flex;
+        justify-content: space-around;
+         width:100% ;
+         height: 100vh;
+        background-color: brown;
+        @include tablet{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        @include mobile{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        &-book{
+            width: 25%;
+            &-imgs{
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+        .text{
+            margin-right: 15%;
+            margin-top: 50px;
+            
+        }
+      }
+}
+    
+#section{
+    margin-top: 50px;
+    display: flex;
+    @include tablet{
+        display: block;
+        @include mobile{
+            display: block;
+        }
+    }
+    .section{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 50px;
+       text-align: center;
+        &-tip{
+            width: 85px;
+           height: 71px;    
+            background-color: black;
+            color: aliceblue;
+        }
+    }
+    .imags{
+        width: 25%;
+        display: flex;
+        @include tablet{
+            display: block;
+            width: 100%;
+            height: 100%;
+            @include mobile{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        &-width{
+            margin-right: 20px;
+            width: 100%;
+
+        }
+    }
+}
+#element{
+    margin-top: 50px;
+    display: flex;
+    .element{
+        display: flex
+        width: 50%;
+        &-picture{
+            width: 100%;
+            &-size{
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+#footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-around ;
+    @include tablet{
+    display: block;
+    }
+    @include mobile{
+        display: block;
+    }
+    .footer_folder{
+        &-stil{
+            list-style: none;
+            &-level{
+                font-size: 22px;
+               margin-top: 15px;
+                a{
+                    color: black;
+                }
+
+            }
+        }
+    }
+    .footer_folders{
+        &-icon{
+margin-top: 35px;
+        
+            &-icons{
+                margin-right: 15px;
+            }
+
+        }
+    }
+}
